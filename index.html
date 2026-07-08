@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator with History</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📖 Quote Generator</h1>
+
+        <div class="quote-box">
+
+            <p id="quote">
+                Click the button to generate a random quote.
+            </p>
+
+            <h3 id="author"></h3>
+
+            <button onclick="generateQuote()">
+                Generate Quote
+            </button>
+
+        </div>
+
+        <div class="history">
+
+            <h2>Quote History</h2>
+
+            <div id="historyList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
